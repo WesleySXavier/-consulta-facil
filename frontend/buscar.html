@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Consulta Fácil - Buscar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Consulta Fácil</a>
+      <div>
+        <span id="userName" class="me-3"></span>
+        <a href="index.html" id="logout" class="btn btn-outline-secondary btn-sm">Sair</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container py-4">
+    <h4>Buscar médico</h4>
+    <form id="searchForm" class="row gy-2 gx-2 align-items-end">
+      <div class="col-md-5">
+        <label class="form-label">Especialidade</label>
+        <input type="text" id="especialidade" class="form-control" placeholder="Ex: Pediatria">
+      </div>
+      <div class="col-md-5">
+        <label class="form-label">Localização</label>
+        <input type="text" id="localizacao" class="form-control" placeholder="Ex: Goiânia">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary w-100" type="submit">Buscar</button>
+      </div>
+    </form>
+    <hr>
+    <div id="results" class="row"></div>
+  </div>
+
+<script>
+const api = "../backend/api.php";
+const user = JSON.parse(sessionStorage.getItem('user')||'null');
+if(!user){ window.location.href='index.html'; }
+document.getElementById('userName').innerText = user.nome;
+
+document.getElementById('logout').addEventListener('click', e => {
+  sessionStorage.removeItem('user');
+});
+
+document.getElementById('searchForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const especialidade = document.getElementById('especialidade').value;
+  const localizacao = document.getElementById('localizacao').value;
+  const q = new URLSearchParams({action:'medicos', especialidade, localizacao});
+  const res = await fetch(api + '?' + q.toString());
+  const j = await res.json();
+  const results = document.getElementById('results');
+  results.innerHTML = '';
+  if(j.success && j.medicos.length){
+    j.medicos.forEach(m => {
+      const col = document.createElement('div');
+      col.className = 'col-md-4 mb-3';
+      col.innerHTML = `
+        <div class="card p-3 shadow-sm">
+          <h5>${m.nome}</h5>
+          <p class="mb-1"><strong>${m.especialidade}</strong></p>
+          <p class="mb-1">${m.localizacao}</p>
+          <p class="mb-1">Avaliação: ${m.avaliacao_media || '4.5'}</p>
+          <a href="agendar.html?medico=${m.id}" class="btn btn-primary">Agendar</a>
+        </div>
+      `;
+      results.appendChild(col);
+    });
+  } else {
+    results.innerHTML = '<div class="col-12"><div class="alert alert-warning">Nenhum médico encontrado.</div></div>';
+  }
+});
+</script>
+</body>
+</html>
