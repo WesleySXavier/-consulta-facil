@@ -52,11 +52,20 @@ Projeto para entrega da 2ª etapa do Projeto Integrador - Curso TADS/TSI (SENAC)
 ## Conteúdo do zip
 Este zip contém:
 - frontend/index.html
+  ![link](https://github.com/WesleySXavier/-consulta-facil/blob/main/frontend/index.html)
 - frontend/buscar.html
+   ![link](https://github.com/WesleySXavier/-consulta-facil/blob/main/frontend/buscar.html)
 - frontend/agendar.html
+   ![link](https://github.com/WesleySXavier/-consulta-facil/blob/main/frontend/agendar.html)
+- backend/home.html
+  ![link](https://github.com/WesleySXavier/-consulta-facil/blob/main/projetointegrador/home.html)
 - backend/config.php
+  ![link](https://github.com/WesleySXavier/-consulta-facil/blob/main/backend/config.php)
 - backend/api.php
+  ![link](https://github.com/WesleySXavier/-consulta-facil/blob/main/backend/api.php)
 - db/consulta_facil.sql
+  ![link](https://github.com/WesleySXavier/-consulta-facil/tree/main/db)
 - Relatório (Documento da 2ª etapa) incluído separadamente em Word.
+  ![link](https://github.com/WesleySXavier/-consulta-facil/blob/main/Relatorio_2_Etapa_EXTENSO.docx)
 
 
