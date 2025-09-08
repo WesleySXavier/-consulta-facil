@@ -57,7 +57,6 @@ Este zip contém:
 - backend/config.php
 - backend/api.php
 - db/consulta_facil.sql
-- README.md
 - Relatório (Documento da 2ª etapa) incluído separadamente em Word.
 
 
