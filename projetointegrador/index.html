@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projeto Consulta Fácil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <br><br>
+    <h4><b>Consulta Fácil</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Consulta Fácil</a> 
+    <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Sobre</a> 
+    <a href="#cadastro" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Faça seu cadastro</a> 
+    <a href="#contato" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Contato</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Agendamento de consultas online!</b></h1>
+    
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/projetointegrador/imagens/01_med.png" width="410px" height="250px" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>O maior site de marcação de consultas da região!</b></p>
+        <p style="text-align: justify;">A marcação online de consultas é um processo digital que permite aos pacientes agendar horários de atendimento médico pela internet, sem a necessidade de contato telefônico, oferecendo autonomia, conveniência e acesso a informações como horários disponíveis a qualquer momento. 
+          <br><br>
+          Essa ferramenta digital otimiza a experiência do paciente, melhora a gestão da agenda do profissional e pode até fidelizar mais clientes, transmitindo uma imagem moderna e organizada da clínica ou hospital.  </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/projetointegrador/imagens/04_med.png" width="410px" height="250px" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Oferecemos consultas por vídeo chamada</b></p>
+        <p style="text-align: justify;">Criada para promover o acesso à saúde mesmo quando o médico e paciente não estão no mesmo local de atendimento, a telemedicina ganhou força na pandemia e ficou. 
+          <br><br>
+          Hoje, figura como uma ótima forma de atender pacientes e disponibilizar serviços de saúde além dos limites geográficos.
+
+Para o campo médico, a telemedicina foi uma dessas práticas que surgiram para oferecer mais comodidade aos pacientes e mudar os hábitos da sociedade.  </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/projetointegrador/imagens/06_med.png" width="410px" height="250px" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Agende e faça seu checkup!</b></p>
+        <p style="text-align: justify;"> O termo “check-up” significa checar, conferir. Na medicina, é usado para designar uma avaliação médica de rotina, associada a exames específicos de acordo com idade, sexo e históricos pessoal e familiar. 
+          <br><br>
+          Com a vida atribulada e corrida, muitas pessoas passam, literalmente, anos sem ir ao médico e assim podem deixar passar sinais que o corpo dá como indicativo de problemas mais sérios. </p>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="sobre">
+
+  </div>
+
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Sobre o Consulta Fácil</b></h4>
+        <p>           
+          Propósito:
+          <br>
+
+          Facilitar o acesso dos pacientes aos serviços de saúde, oferecendo uma plataforma intuitiva 
+          para o agendamento de consultas médicas online, com médicos de diversas 
+          especialidades, em diferentes regiões.
+          </p>
+
+          <p>
+          Objetivos:
+          <br>
+
+          - Reduzir o tempo de espera e a burocracia no agendamento de consultas.
+            <br>
+          - Melhorar a experiência do usuário na procura por atendimento médico.
+            <br>
+          - Conectar pacientes e profissionais de saúde de forma eficiente e segura.
+          </p>
+
+          <p>
+
+          Problemas que resolve:
+          <br>
+
+          - Dificuldade de agendar consultas médicas por telefone.
+            <br>
+          - Falta de transparência sobre disponibilidade e especialidades dos médicos.
+            <br>
+          - Falta de lembretes e controle de consultas agendadas.
+          </p>
+          <p>  
+          Funcionalidades principais:
+          <br>
+
+          - Busca por médicos por especialidade, localização ou plano de saúde.
+            <br>
+          - Agendamento e cancelamento de consultas online.
+            <br>
+          - Perfil do médico com avaliações de pacientes.
+            <br>
+          - Notificações por e-mail e SMS antes da consulta.
+            <br>
+          - Área do paciente para visualizar histórico de consultas.
+          </p>
+          <p>
+
+          Benefícios esperados:
+          <br>
+
+          - Maior conforto e autonomia para o paciente.
+            <br>
+          - Redução de faltas às consultas.
+            <br>
+          - Organização e controle para médicos e clínicas.
+          </p>
+    
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Realize seu cadastro</b></h4>
+
+    <h4 id="cadastro"><b>Cadastro de Usuário</b></h4>
+
+    <form action="/processar_cadastro" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <br>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="senha">Senha:</label>
+            <br>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+        <br>
+        <div>
+            <label for="confirmar_senha">Confirmar Senha:</label>
+            <br>
+            <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Cadastrar</button>
+        </div>
+        <br>
+    </form>
+
+
+  <!-- CONTATO -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contato"><b>Contato</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>contato@consultafacil.com.br</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Belo Horizonte, MG</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>31 9 9999-9999</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nome</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>E-mail</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Mensagem</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Enviar mensagem</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Volte sempre!</h3>
+      <p>Muito obrigado por escolher nosso serviço, sua satisfação nos motiva a continuar melhorando </p>
+    </div>
+  
+
+  </footer>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
